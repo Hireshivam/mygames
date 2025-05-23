@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>MyGames</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Web Games</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Unity WebGL Game Gallery</h1>
+    <p>Click on a game to play it or upload a new game folder</p>
+  </header>
+
+  <div class="upload-section">
+    <input type="file" id="uploadInput" webkitdirectory directory multiple>
+    <button onclick="handleUpload()">Upload Game</button>
+    <p>(Use an external host to play real Unity games. Uploading here is for demonstration only.)</p>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <!-- Example games -->
+    <div class="game-card" onclick="loadGame('https://yourhost.com/game1/index.html')">
+      <img src="https://via.placeholder.com/200x120?text=Game+1" alt="Game 1" />
+      <div class="title">Game 1</div>
+    </div>
+  </div>
+
+  <div class="iframe-container" id="iframeContainer">
+    <button class="close-button" onclick="closeGame()">Close Game</button>
+    <iframe id="gameFrame" src=""></iframe>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
